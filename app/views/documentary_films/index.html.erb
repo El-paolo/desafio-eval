@@ -1,0 +1,10 @@
+<h1>DocumentaryFilms#index</h1>
+
+<% @documentary_films.each do |film| %>
+  <h2>Title:<%= film.name %></h2>
+  <p>Director:<%= film.director %></p>
+  <p>Synopsis:<%= film.synopsis %></p>
+<% end %>
+<p>Documentary Film succesfully added! <a href="/">go back</a></p>
+
+<p>Find me in app/views/documentary_films/index.html.erb</p>

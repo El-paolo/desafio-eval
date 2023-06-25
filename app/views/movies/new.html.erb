@@ -1,0 +1,37 @@
+<h1>Movies#new</h1>
+<h1 class="text-center" >Create new movie</h1>
+<br><br>
+
+<div class="d-flex justify-content-center" >
+
+<%= form_with model: @movie, method: :post do |form|   %>
+<div class="border p-5 shadow" >
+ 
+
+<div class="mb-4" >
+    <%=  form.label :name, "Movie name", class: "form-label"   %>
+    <%= form.text_field :name, class:"form-control" %>
+</div>
+
+<div class="mb-5" >
+     <%=  form.label :director, "Movie director", class: "form-label" %>
+    <%= form.text_field :director, class:"form-control" %>
+</div>
+
+<div class="mb-5" >
+     <%=  form.label :synopsis, "Movie synopsis", class: "form-label" %>
+    <%= form.text_field :synopsis, class:"form-control" %>
+</div>
+
+
+<div class="text-center" >
+    <%= form.submit "Enviar" , class:"btn btn-dark" %>
+</div>
+
+</div>
+
+
+</div>
+
+<% end %>
+<p>Find me in app/views/movies/new.html.erb</p>

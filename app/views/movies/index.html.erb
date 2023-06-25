@@ -1,0 +1,8 @@
+<h1>Movies#index</h1>
+<% @movies.each do |movie| %>
+  <h2>Title:<%= movie.name %></h2>
+  <p>Director:<%= movie.director %></p>
+  <p>Synopsis:<%= movie.synopsis %></p>
+<% end %>
+<p>Movie succesfully added! <a href="/">go back</a></p>
+<p>Find me in app/views/movies/index.html.erb</p>
